@@ -1,0 +1,9 @@
+package com.google.android.gms.internal.p001firebaseauthapi;
+
+/* JADX INFO: compiled from: com.google.firebase:firebase-auth@@22.3.0 */
+/* JADX INFO: loaded from: classes.dex */
+enum zzams extends zzamr {
+    private zzams(String str, int i, zzanb zzanbVar, int i2) {
+        super(str, 9, zzanbVar, 3);
+    }
+}

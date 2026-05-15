@@ -1,0 +1,13 @@
+package com.google.android.recaptcha.internal;
+
+/* JADX INFO: compiled from: com.google.android.recaptcha:recaptcha@@18.1.2 */
+/* JADX INFO: loaded from: classes10.dex */
+public final class zzfn extends zzgj implements zzhz {
+    private zzfn() {
+        super(zzfo.zzd);
+    }
+
+    /* synthetic */ zzfn(zzfm zzfmVar) {
+        super(zzfo.zzd);
+    }
+}

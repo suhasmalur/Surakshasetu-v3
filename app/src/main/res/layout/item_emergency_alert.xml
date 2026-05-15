@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    style="@style/Widget.SurakshaSetu.CardView">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/safety_red"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:backgroundTint="@color/safety_red"/>
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/tvVictimName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Victim: Sunita Devi"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/safety_red"
+                android:id="@+id/tvDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="350m away"/>
+        </LinearLayout>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/grey_800"
+            android:id="@+id/tvEmergencyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Triggered: 2 mins ago"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAccept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ACCEPT"
+                android:layout_weight="1"
+                app:backgroundTint="@color/primary_green"/>
+            <View
+                android:layout_width="8dp"
+                android:layout_height="1dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAP"
+                style="@style/Widget.Material3.Button.OutlinedButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

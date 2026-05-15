@@ -1,0 +1,199 @@
+package com.google.firebase.firestore.proto;
+
+import com.google.protobuf.ByteString;
+import com.google.protobuf.CodedInputStream;
+import com.google.protobuf.ExtensionRegistryLite;
+import com.google.protobuf.GeneratedMessageLite;
+import com.google.protobuf.InvalidProtocolBufferException;
+import com.google.protobuf.Parser;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+
+/* JADX INFO: loaded from: classes10.dex */
+public final class MutationQueue extends GeneratedMessageLite<MutationQueue, Builder> implements MutationQueueOrBuilder {
+    private static final MutationQueue DEFAULT_INSTANCE;
+    public static final int LAST_ACKNOWLEDGED_BATCH_ID_FIELD_NUMBER = 1;
+    public static final int LAST_STREAM_TOKEN_FIELD_NUMBER = 2;
+    private static volatile Parser<MutationQueue> PARSER;
+    private int lastAcknowledgedBatchId_;
+    private ByteString lastStreamToken_ = ByteString.EMPTY;
+
+    private MutationQueue() {
+    }
+
+    @Override // com.google.firebase.firestore.proto.MutationQueueOrBuilder
+    public int getLastAcknowledgedBatchId() {
+        return this.lastAcknowledgedBatchId_;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setLastAcknowledgedBatchId(int value) {
+        this.lastAcknowledgedBatchId_ = value;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearLastAcknowledgedBatchId() {
+        this.lastAcknowledgedBatchId_ = 0;
+    }
+
+    @Override // com.google.firebase.firestore.proto.MutationQueueOrBuilder
+    public ByteString getLastStreamToken() {
+        return this.lastStreamToken_;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void setLastStreamToken(ByteString value) {
+        value.getClass();
+        this.lastStreamToken_ = value;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void clearLastStreamToken() {
+        this.lastStreamToken_ = getDefaultInstance().getLastStreamToken();
+    }
+
+    public static MutationQueue parseFrom(ByteBuffer data) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data);
+    }
+
+    public static MutationQueue parseFrom(ByteBuffer data, ExtensionRegistryLite extensionRegistry) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+
+    public static MutationQueue parseFrom(ByteString data) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data);
+    }
+
+    public static MutationQueue parseFrom(ByteString data, ExtensionRegistryLite extensionRegistry) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+
+    public static MutationQueue parseFrom(byte[] data) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data);
+    }
+
+    public static MutationQueue parseFrom(byte[] data, ExtensionRegistryLite extensionRegistry) throws InvalidProtocolBufferException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, data, extensionRegistry);
+    }
+
+    public static MutationQueue parseFrom(InputStream input) throws IOException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static MutationQueue parseFrom(InputStream input, ExtensionRegistryLite extensionRegistry) throws IOException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static MutationQueue parseDelimitedFrom(InputStream input) throws IOException {
+        return (MutationQueue) parseDelimitedFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static MutationQueue parseDelimitedFrom(InputStream input, ExtensionRegistryLite extensionRegistry) throws IOException {
+        return (MutationQueue) parseDelimitedFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static MutationQueue parseFrom(CodedInputStream input) throws IOException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, input);
+    }
+
+    public static MutationQueue parseFrom(CodedInputStream input, ExtensionRegistryLite extensionRegistry) throws IOException {
+        return (MutationQueue) GeneratedMessageLite.parseFrom(DEFAULT_INSTANCE, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+        return DEFAULT_INSTANCE.createBuilder();
+    }
+
+    public static Builder newBuilder(MutationQueue prototype) {
+        return DEFAULT_INSTANCE.createBuilder(prototype);
+    }
+
+    public static final class Builder extends GeneratedMessageLite.Builder<MutationQueue, Builder> implements MutationQueueOrBuilder {
+        private Builder() {
+            super(MutationQueue.DEFAULT_INSTANCE);
+        }
+
+        @Override // com.google.firebase.firestore.proto.MutationQueueOrBuilder
+        public int getLastAcknowledgedBatchId() {
+            return ((MutationQueue) this.instance).getLastAcknowledgedBatchId();
+        }
+
+        public Builder setLastAcknowledgedBatchId(int value) {
+            copyOnWrite();
+            ((MutationQueue) this.instance).setLastAcknowledgedBatchId(value);
+            return this;
+        }
+
+        public Builder clearLastAcknowledgedBatchId() {
+            copyOnWrite();
+            ((MutationQueue) this.instance).clearLastAcknowledgedBatchId();
+            return this;
+        }
+
+        @Override // com.google.firebase.firestore.proto.MutationQueueOrBuilder
+        public ByteString getLastStreamToken() {
+            return ((MutationQueue) this.instance).getLastStreamToken();
+        }
+
+        public Builder setLastStreamToken(ByteString value) {
+            copyOnWrite();
+            ((MutationQueue) this.instance).setLastStreamToken(value);
+            return this;
+        }
+
+        public Builder clearLastStreamToken() {
+            copyOnWrite();
+            ((MutationQueue) this.instance).clearLastStreamToken();
+            return this;
+        }
+    }
+
+    @Override // com.google.protobuf.GeneratedMessageLite
+    protected final Object dynamicMethod(GeneratedMessageLite.MethodToInvoke method, Object arg0, Object arg1) {
+        switch (method) {
+            case NEW_MUTABLE_INSTANCE:
+                return new MutationQueue();
+            case NEW_BUILDER:
+                return new Builder();
+            case BUILD_MESSAGE_INFO:
+                Object[] objects = {"lastAcknowledgedBatchId_", "lastStreamToken_"};
+                return newMessageInfo(DEFAULT_INSTANCE, "\u0000\u0002\u0000\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001\u0004\u0002\n", objects);
+            case GET_DEFAULT_INSTANCE:
+                return DEFAULT_INSTANCE;
+            case GET_PARSER:
+                Parser<MutationQueue> parser = PARSER;
+                if (parser == null) {
+                    synchronized (MutationQueue.class) {
+                        parser = PARSER;
+                        if (parser == null) {
+                            parser = new GeneratedMessageLite.DefaultInstanceBasedParser(DEFAULT_INSTANCE);
+                            PARSER = parser;
+                        }
+                        break;
+                    }
+                }
+                return parser;
+            case GET_MEMOIZED_IS_INITIALIZED:
+                return (byte) 1;
+            case SET_MEMOIZED_IS_INITIALIZED:
+                return null;
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
+
+    static {
+        MutationQueue defaultInstance = new MutationQueue();
+        DEFAULT_INSTANCE = defaultInstance;
+        GeneratedMessageLite.registerDefaultInstance(MutationQueue.class, defaultInstance);
+    }
+
+    public static MutationQueue getDefaultInstance() {
+        return DEFAULT_INSTANCE;
+    }
+
+    public static Parser<MutationQueue> parser() {
+        return DEFAULT_INSTANCE.getParserForType();
+    }
+}

@@ -1,0 +1,34 @@
+package com.google.android.recaptcha.internal;
+
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+
+/* JADX INFO: compiled from: com.google.android.recaptcha:recaptcha@@18.1.2 */
+/* JADX INFO: loaded from: classes10.dex */
+final class zzo extends SuspendLambda implements Function2 {
+    zzo(Continuation continuation) {
+        super(2, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new zzo(continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
+        return new zzo((Continuation) obj2).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        ResultKt.throwOnFailure(obj);
+        Thread.currentThread().setPriority(8);
+        return Unit.INSTANCE;
+    }
+}
